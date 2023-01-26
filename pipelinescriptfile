@@ -1,0 +1,8 @@
+node {
+					stage('SCM checkout') {
+						git branch: 'Ibrahim', url: 'https://github.com/IbrahimKalluri/Script.git'
+					}
+					stage('Build') {
+						echo "Welcome from pipe line"
+						}
+					}
