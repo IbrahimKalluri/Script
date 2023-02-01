@@ -16,9 +16,11 @@ def gv
 	
 			     }
 		stage("deploy") {
+			when {
 			expression {
 			params.executeTests == true
 			}
+			}	
 		steps {
 			script {
 				gv.buildApp()
