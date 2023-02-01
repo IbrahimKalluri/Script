@@ -15,7 +15,7 @@ def gv
 			}
 	
 			     }
-		stage ("deploy") {
+		stage("deploy") {
 			expression {
 			params.executeTests == true
 			}
